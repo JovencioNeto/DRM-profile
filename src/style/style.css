@@ -1,7 +1,12 @@
+:root{
+    --white: #fff;
+}
+
+
 *{
     padding: 0;
     margin: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
 }
 
 .redes_sociais{
@@ -21,25 +26,45 @@
     height: 3vh;
 }
 .links{
-    margin-bottom: 40px;
-    margin-top: 45px;
-    margin-left: 25vh;
+    position: relative;
+    top: 50px;
+    left: 180px;
 }
 
 .inicio,.monitoria,.olimpiadas,.enem,.conta,.materias{
     text-decoration: none;
-    border: 2px solid #023E8A;
-    border-radius:15px ;
-    color: white;
-    font-size: 16px;
-    padding-left: 30px;
-    padding-right: 30px;
+    color: var(--white);
+    font-size: 30px;
+}
+
+.inicio{
+    position: relative;
+    right: 40px;
+}
+.materias{
+    position: relative;
+    left: 40px;
+
+}
+.olimpiadas{
+    position: relative;
+    left: 80px;
+}
+
+.enem{
+    position: relative;
+    left: 110px;
+}
+
+.conta{
+    position: relative;
+    left: 140px;
 }
 
 .logo{
     height: 12vh;
-    background-color: white;
-    border: 2px solid white;
+    background-color: var(--white);
+    border: 2px solid var(--white);
     border-radius: 150px;
     margin-bottom: 10px;
     margin-top: 10px;
@@ -57,10 +82,11 @@
 }
 
 .frase_logo{
-    color: white;
+    color: var(--white);
     font-size: 36px;
-    margin-left: 20px;
-    margin-top: 33px;
+    position: relative;
+    top: 45px;
+    left: 40px;
 }
 
 .logo_frase{
@@ -70,6 +96,7 @@
 }
 
 .perfil_icon{
-    margin-top: 28px; 
-    margin-left: 300px;
+    position: relative;
+    top: 35px;
+    left: 48.5rem;
 }
