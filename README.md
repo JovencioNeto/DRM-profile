@@ -7,11 +7,11 @@ DRM Profile é um protótipo de um site para ser utilizados pelos estudantes da 
 O projeto foi desenvolvido e criado para ajudar os alunos da EEEP Deputado Roberto Mesquita , assim como também oferecer auxilio na divulgação de eventos e propostas da mesma instituição, ela vai oferecer vídeo aulas, atividades , conteúdos para estudo do ENEM, demonstrar caminhos oferecidos pelas faculdades e detalhar cada trila de conhecimento para que os alunos tenham uma noção de onde irão se especializar e o que vai estar nessa graduação.
 
 ## Funcionalidades
-
+- <strong>Aprendizagem</strong>:  Esse projeto pode vir a servir como aprendizagem para os usuários que desejam aprender sobre diferentes trilhas de conhecimento.
 ## Tecnologias utilizadas
-- HTML: utilizado para marcar e modelar todo o site
-- CSS: utilizado para estilizar todo o site
-- JavaScript: utilizado para da funções e cálculos ao site
+- <strong>HTML </strong>: utilizado para marcar e modelar todo o site
+- <strong>CSS </strong>: utilizado para estilizar todo o site
+- <strong>JavaScript </strong>: utilizado para da funções e cálculos ao site
 ## Como contribuir
 
 ## Contato
