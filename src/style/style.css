@@ -1,5 +1,7 @@
 :root{
     --white: #fff;
+    --black: #000;
+    --purple: #800080;
 }
 
 
@@ -9,32 +11,25 @@
     box-sizing: border-box;
 }
 
-.redes_sociais{
-    font-size: 12px;
-    padding-top: 7px;
-    padding-left: 30px
+body{
+    background-color: var(--purple);
 }
 .cabeçalho{
     display: flex;
-    z-index: 999;
     position: relative;
-    background-color: #0077B6;
+    background-color: var(--black);
 }
 
-.divulgacoes{
-    background-color: black;
-    height: 3vh;
-}
 .links{
     position: relative;
-    top: 50px;
+    top: 55px;
     left: 180px;
 }
 
 .inicio,.monitoria,.olimpiadas,.enem,.conta,.materias{
     text-decoration: none;
     color: var(--white);
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .inicio{
@@ -70,17 +65,6 @@
     margin-top: 10px;
 }
 
-.lupa{
-    height: 3vh;
-    width: 2vw;
-    margin-top: 40px;
-    margin-left: 30px;
-}
-
-.redes_sociais_frases{
-    text-decoration: none;
-}
-
 .frase_logo{
     color: var(--white);
     font-size: 36px;
@@ -98,5 +82,33 @@
 .perfil_icon{
     position: relative;
     top: 35px;
-    left: 48.5rem;
+    left: 37rem;
+}
+
+.perfil_icon:hover{
+    filter: brightness(0.8);
+}
+
+.links a:hover{
+    padding: 0.5rem;
+    border: 3px solid var(--white);
+    border-style: double;
+    border-radius: 10px;
+}
+
+.serch_area{
+    position: relative;
+    top: 48px;
+    left: 28rem;
+}
+
+.search{
+    height: 40px;
+    width: 250px;
+    border: 2px solid transparent;
+    border-radius: 20px;
+}
+
+.search:hover{
+    filter: brightness(0.8);
 }
