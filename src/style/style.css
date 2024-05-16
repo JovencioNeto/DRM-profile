@@ -12,6 +12,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
 }
 
 body{
@@ -85,7 +86,9 @@ body{
 .perfil_icon:hover{
     filter: brightness(0.8);
 }
-
+.links a {
+    transition: .15s;
+}
 .links a:hover{
     padding: 0.5rem;
     border: 3px solid var(--white);
