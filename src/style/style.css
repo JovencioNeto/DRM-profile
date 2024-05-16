@@ -2,6 +2,9 @@
     --white: #fff;
     --black: #000;
     --purple: #800080;
+    --bg-color-1: #370250;
+    --bg-color-2: #771CA3;
+    --bg-color-3: #860068;
 }
 
 
@@ -12,18 +15,22 @@
 }
 
 body{
-    background-color: var(--purple);
+    background: linear-gradient(150deg, var(--bg-color-1) 16.73%, var(--bg-color-2) 50.04%, var(--bg-color-3) 83.35%);
+    width: 100vw;
+    height: 100vh;
 }
 .cabeçalho{
     display: flex;
     position: relative;
+    width: 100vw;
+    height: 14vh;
     background-color: var(--black);
 }
 
 .links{
     position: relative;
-    top: 55px;
-    left: 180px;
+    top: 50px;
+    left: 20rem;
 }
 
 .inicio,.monitoria,.olimpiadas,.enem,.conta,.materias{
@@ -32,7 +39,7 @@ body{
     font-size: 25px;
 }
 
-.inicio{
+.inicio, .materias{
     position: relative;
     right: 40px;
 }
@@ -57,23 +64,13 @@ body{
 }
 
 .logo{
-    height: 12vh;
     background-color: var(--white);
-    border: 2px solid var(--white);
-    border-radius: 150px;
     margin-bottom: 10px;
     margin-top: 10px;
 }
 
-.frase_logo{
-    color: var(--white);
-    font-size: 36px;
-    position: relative;
-    top: 45px;
-    left: 40px;
-}
 
-.logo_frase{
+.logo_area{
     margin-left: 20px;
     position: relative;
     display: flex;
@@ -82,7 +79,7 @@ body{
 .perfil_icon{
     position: relative;
     top: 35px;
-    left: 37rem;
+    left: 49rem;
 }
 
 .perfil_icon:hover{
@@ -99,14 +96,14 @@ body{
 .serch_area{
     position: relative;
     top: 48px;
-    left: 28rem;
+    left: 38rem;
 }
 
 .search{
-    height: 40px;
-    width: 250px;
+    height: 35px;
+    width: 240px;
     border: 2px solid transparent;
-    border-radius: 20px;
+    border-radius: 5px;
 }
 
 .search:hover{
