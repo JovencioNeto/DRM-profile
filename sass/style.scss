@@ -1,0 +1,146 @@
+
+$white: #fff;
+$black: #000;
+$purple: #800080;
+$bg-color-1: #370250;
+$bg-color-2: #771CA3;
+$bg-color-3: #860068;
+
+
+$flex: flex ;
+$center: center ;
+$relative: relative ;
+$none: none ;
+
+$vw: 100vw ;
+$vh: 100vh ;
+$filter: 0.8 ;
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+}
+
+body{
+    background: linear-gradient(150deg, $bg-color-1 16.73%, $bg-color-2 50.04%, $bg-color-3 83.35%);
+    width: $vw;
+    height: $vh;
+}
+.cabeçalho{
+    display: $flex;
+    position: $relative;
+    width: $vw;
+    height: 14vh;
+    background-color: $black;
+}
+
+.links{
+    position: $relative;
+    top: 5vh;
+    left: 9vw;
+
+    a {
+        transition: .15s;
+        text-decoration: $none;
+        color: $white;
+        font-size: 25px;
+    }
+    
+    a:hover{
+        padding: 0.5rem;
+        border: 3px solid $white;
+        border-style: double;
+        border-radius: 10px;
+    }
+}
+
+.inicio, .materias{
+    position: $relative;
+    right: 40px;
+}
+.materias{
+    position: $relative;
+    left: 40px;
+
+}
+.olimpiadas{
+    position: $relative;
+    left: 80px;
+}
+
+.enem{
+    position: $relative;
+    left: 110px;
+}
+
+.conta{
+    position: $relative;
+    left: 140px;
+}
+
+.logo{
+    background-color: $white;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+
+.logo_area{
+    margin-left: 20px;
+    position: $relative;
+    display: $flex;
+}
+
+.perfil_icon{
+    position: $relative;
+    top: 3vh;
+    left: 30vw;
+
+    &:hover{
+        filter: brightness($filter);
+    }
+}
+
+
+.serch_area{
+    position: $relative;
+    top: 5vh;
+    left: 26vw;
+}
+
+
+.search{
+    height: 35px;
+    width: 240px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+
+    &:hover{
+        filter: brightness($filter);
+    }
+    
+}
+
+.submit{
+    display: $flex;
+    justify-content: center;
+    align-items: $center;
+    width: 40px;
+    height: 25px;
+    cursor: pointer;
+    border: 0;
+    border-top-right-radius: 10px;
+    position: absolute;
+    top:5px;
+    right: 0;
+    background-color:transparent;
+
+    &:hover{
+        filter: brightness($filter);
+    }
+    i:hover{
+        filter: brightness($filter)
+    }
+}

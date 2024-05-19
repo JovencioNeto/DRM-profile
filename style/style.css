@@ -1,0 +1,124 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+
+body {
+  background: linear-gradient(150deg, #370250 16.73%, #771CA3 50.04%, #860068 83.35%);
+  width: 100vw;
+  height: 100vh;
+}
+
+.cabeçalho {
+  display: flex;
+  position: relative;
+  width: 100vw;
+  height: 14vh;
+  background-color: #000;
+}
+
+.links {
+  position: relative;
+  top: 5vh;
+  left: 9vw;
+}
+.links a {
+  transition: 0.15s;
+  text-decoration: none;
+  color: #fff;
+  font-size: 25px;
+}
+.links a:hover {
+  padding: 0.5rem;
+  border: 3px solid #fff;
+  border-style: double;
+  border-radius: 10px;
+}
+
+.inicio, .materias {
+  position: relative;
+  right: 40px;
+}
+
+.materias {
+  position: relative;
+  left: 40px;
+}
+
+.olimpiadas {
+  position: relative;
+  left: 80px;
+}
+
+.enem {
+  position: relative;
+  left: 110px;
+}
+
+.conta {
+  position: relative;
+  left: 140px;
+}
+
+.logo {
+  background-color: #fff;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.logo_area {
+  margin-left: 20px;
+  position: relative;
+  display: flex;
+}
+
+.perfil_icon {
+  position: relative;
+  top: 3vh;
+  left: 30vw;
+}
+.perfil_icon:hover {
+  filter: brightness(0.8);
+}
+
+.serch_area {
+  position: relative;
+  top: 5vh;
+  left: 26vw;
+}
+
+.search {
+  height: 35px;
+  width: 240px;
+  border: 2px solid transparent;
+  border-radius: 5px;
+}
+.search:hover {
+  filter: brightness(0.8);
+}
+
+.submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 25px;
+  cursor: pointer;
+  border: 0;
+  border-top-right-radius: 10px;
+  position: absolute;
+  top: 5px;
+  right: 0;
+  background-color: transparent;
+}
+.submit:hover {
+  filter: brightness(0.8);
+}
+.submit i:hover {
+  filter: brightness(0.8);
+}
+
+/*# sourceMappingURL=style.css.map */
