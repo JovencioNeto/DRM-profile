@@ -1,0 +1,150 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+
+body {
+  background: linear-gradient(150deg, #370250 16.73%, #771CA3 50.04%, #860068 83.35%);
+  width: 100vw;
+  height: 100vh;
+}
+
+header {
+  width: 100vw;
+  height: 14vh;
+  max-width: max-content;
+}
+
+.cabeçalho {
+  display: flex;
+  width: 100vw;
+  height: 14vh;
+  background-color: #000;
+}
+.cabeçalho .perfil {
+  position: relative;
+  top: 2rem;
+  left: 49rem;
+}
+.cabeçalho .perfil .perfil_icon:hover {
+  filter: brightness(0.8);
+}
+.cabeçalho .links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  left: 20rem;
+}
+.cabeçalho .links a {
+  transition: 0.15s;
+  text-decoration: none;
+  color: #fff;
+  font-size: 25px;
+}
+.cabeçalho .links a:hover {
+  padding: 0.5rem;
+  border: 3px solid #fff;
+  border-style: double;
+  border-radius: 10px;
+}
+.cabeçalho .inicio, .cabeçalho .materias {
+  position: relative;
+  right: 40px;
+}
+.cabeçalho .materias {
+  position: relative;
+  left: 40px;
+}
+.cabeçalho .olimpiadas {
+  position: relative;
+  left: 80px;
+}
+.cabeçalho .enem {
+  position: relative;
+  left: 110px;
+}
+.cabeçalho .conta {
+  position: relative;
+  left: 140px;
+}
+.cabeçalho .logo_area {
+  margin-left: 20px;
+  display: flex;
+}
+.cabeçalho .logo_area .logo {
+  background-color: #fff;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.cabeçalho .serch_area {
+  position: relative;
+  top: 3rem;
+  left: 40rem;
+}
+.cabeçalho .serch_area .search {
+  height: 35px;
+  width: 240px;
+  border: 2px solid transparent;
+  border-radius: 5px;
+}
+.cabeçalho .serch_area .search:hover {
+  filter: brightness(0.8);
+}
+.cabeçalho .serch_area .submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 25px;
+  cursor: pointer;
+  border: 0;
+  border-top-right-radius: 10px;
+  position: absolute;
+  top: 5px;
+  right: 0;
+  background-color: transparent;
+}
+.cabeçalho .serch_area .submit:hover {
+  filter: brightness(0.8);
+}
+.cabeçalho .serch_area .submit i:hover {
+  filter: brightness(0.8);
+}
+
+.caixa {
+  width: 100vw;
+  height: 100px;
+  border: 2px solid red;
+  margin-top: 300px;
+  display: flex;
+}
+
+.caixa1 {
+  border: 2px solid white;
+  flex: 0.5;
+  background-color: white;
+}
+
+.caixa2 {
+  border: 2px solid blue;
+  flex: 5;
+  background-color: blue;
+}
+
+.caixa3 {
+  border: 2px solid orange;
+  flex: 2;
+  background-color: orange;
+}
+
+.caixa4 {
+  border: 2px solid greenyellow;
+  flex: 0.5;
+  background-color: greenyellow;
+}
+
+/*# sourceMappingURL=style.css.map */

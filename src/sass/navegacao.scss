@@ -1,0 +1,147 @@
+@import "./sass/imports.scss";
+@import "./sass/include.scss";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+}
+
+body{
+    background: linear-gradient(150deg, $bg-color-1 16.73%, $bg-color-2 50.04%, $bg-color-3 83.35%);
+    width: $vw;
+    height: $vh;
+}
+
+header{
+    width: $vw;
+    height: 14vh;
+    max-width: max-content;
+}
+.cabeçalho{
+    display: $flex;
+    width: $vw;
+    height: 14vh;
+    background-color: $black;
+    
+    .perfil{
+        position: relative;
+        top: 2rem;
+        left: 49rem;
+        .perfil_icon:hover{
+            filter: brightness($filter);
+        }
+    }
+    .links{
+        @include center($flex,$center,$center);
+        position: relative;
+        left: 20rem;
+        a {
+            transition: .15s;
+            text-decoration: $none;
+            color: $white;
+            font-size: 25px;
+        }
+        
+        a:hover{
+            padding: 0.5rem;
+            border: 3px solid $white;
+            border-style: double;
+            border-radius: 10px;
+        }
+    }
+    .inicio, .materias{
+        position: $relative;
+        right: 40px;
+    }
+    .materias{
+        position: $relative;
+        left: 40px;
+    
+    }
+    .olimpiadas{
+        position: $relative;
+        left: 80px;
+    }
+    
+    .enem{
+        position: $relative;
+        left: 110px;
+    }
+    
+    .conta{
+        position: $relative;
+        left: 140px;
+    }
+    
+    .logo_area{
+        margin-left: 20px;
+        display: flex;
+        .logo{
+            background-color: $white;
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+    }
+    .serch_area{
+        position: relative;
+        top: 3rem;
+        left: 40rem;
+        .search{
+            height: 35px;
+            width: 240px;
+            border: 2px solid transparent;
+            border-radius: 5px;
+            &:hover{
+                filter: brightness($filter);
+            }
+            
+        }
+        .submit{
+        @include center($flex,$center,$center);
+        width: 40px;
+        height: 25px;
+        cursor: pointer;
+        border: 0;
+        border-top-right-radius: 10px;
+        position: absolute;
+        top:5px;
+        right: 0;
+        background-color:transparent;
+    
+        &:hover{
+            filter: brightness($filter);
+        }
+        i:hover{
+            filter: brightness($filter)
+        }
+    }
+    }
+}
+
+
+
+.caixa {
+    width: 100vw;
+    height: 100px;
+    border: 2px solid red;
+    margin-top: 300px;
+    display: flex;
+}.caixa1 {
+    border: 2px solid white;
+    flex: 0.5;
+    background-color: white;
+}.caixa2 {
+    border: 2px solid blue;
+    flex: 5;
+    background-color: blue;
+}.caixa3 {
+    border: 2px solid orange;
+    flex: 2;
+    background-color: orange;
+}.caixa4 {
+    border: 2px solid greenyellow;
+    flex: 0.5;
+    background-color: greenyellow;
+}

@@ -5,29 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DRM profile</title>
     <script src="./src/js/script.js" defer></script>
-    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./src/style/style_navegacao/style/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" type="image/x-icon" href="./src/img/DRM.png">
 </head>
 <body>  
+    <!--Cabeçalho do site contendo um header para melhorar a semântica-->
     <header>
+        <!-- Cabeçalho do site indicando o conteúdo que ele vai possuir -->
         <div class="cabeçalho">
+            <!-- Área da logo do site -->
             <div class="logo_area">
                 <img src="./src/img/DRM.png" alt="logo" class="logo">
             </div>
-
+            <!-- Área dos links para navegação -->
             <div class="links">
                 <a class="inicio" href="index.html">Início</a>
-                <a class="monitoria" href="./src/html/monitoria.html">Monitoria</a>
-                <a class="materias" href="./src/html/materias.html">Matérias</a>
-                <a class="olimpiadas" href="./src/html/olimpiadas.html">Olimpiadas</a>
-                <a class="enem" href="./src/html/enem.html">ENEM</a>
-                <a class="conta" href="./src/html/criar_conta.html">Criar / Registrar</a>
+                <a class="monitoria" href="./src/pages/monitoria.html">Monitoria</a>
+                <a class="materias" href="./src/pages/materias.html">Matérias</a>
+                <a class="olimpiadas" href="./src/pages/olimpiadas.html">Olimpiadas</a>
+                <a class="enem" href="./src/pages/enem.html">ENEM</a>
+                <a class="conta" href="./src/pages/criar_conta.html">Criar / Registrar</a>
             </div>
 
             <div class="serch_area">
-                <input type="search" name="search" id="search" class="search" placeholder="Pesquise algo">
-                <button type="submit" class="submit"><i class="fa fa-search" ></i></button>
+                <input type="text" name="search" id="search" class="search" placeholder="Pesquise algo">
+                <button type="submit" class="submit" id="button_search"><i class="fa fa-search" ></i></button>
             </div>
 
             <div class="perfil">
@@ -35,7 +38,6 @@
             </div>
         </div>
     </header>
-
     
 </body>
 </html>
