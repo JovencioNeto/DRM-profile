@@ -8,10 +8,13 @@ O projeto foi desenvolvido e criado para ajudar os alunos da EEEP Deputado Rober
 
 ## Funcionalidades
 - <strong>Aprendizagem</strong>:  Esse projeto pode vir a servir como aprendizagem para os usuários que desejam aprender sobre diferentes trilhas de conhecimento.
+- <strong>Rede social </strong>: O sistema pode ser utilizado como algo semelhante a uma rede social, onde nele haverá navegação entra páginas e troca de mensagem e posts entre os usuários
 ## Tecnologias utilizadas
 - <strong>HTML </strong>: utilizado para marcar e modelar todo o site
 - <strong>CSS </strong>: utilizado para estilizar todo o site
 - <strong>JavaScript </strong>: utilizado para da funções e cálculos ao site
+- <strong>SASS </strong>: utilizado para auxiliar o CSS na estilização do projeto
+- <strong>PHP </strong>: utilizado para obter informaçoes dos formulários e trabalhar em conjunto com o banco de dados
 ## Como contribuir
 
 ## Contato
