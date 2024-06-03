@@ -14,7 +14,7 @@ button_search.addEventListener('click', () =>{
 document.getElementById('themeSwitcher').addEventListener('click', () =>{
     // Se o tema estiver como dark, troca para as cores do tema claro
     if(body.dataset.theme === 'dark'){
-        logo.src = './src/img/DRM_Light.jpeg'
+        logo.src = '../img/DRM_Light.jpeg'
         root.style.setProperty('--bg-color-1', '#B724FF')
         root.style.setProperty('--bg-color-2', '#FFA0EA')
         root.style.setProperty('--bg-color-3', '#FFA0EA')
@@ -23,7 +23,7 @@ document.getElementById('themeSwitcher').addEventListener('click', () =>{
         body.dataset.theme = 'light'
     // Se o tema estiver como light, troca as cores para do tema escuro
     } else{
-        logo.src = './src/img/DRM.png'
+        logo.src = '../img/DRM.png'
         root.style.setProperty('--bg-color-1', '#370250')
         root.style.setProperty('--bg-color-2', '#771CA3')
         root.style.setProperty('--bg-color-3', '#860068')

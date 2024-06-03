@@ -1,7 +1,7 @@
-<?php 
+<!-- <?php 
     //Importar o arquivo conexao.php
     include("./src/php/conexao.php");
-?>
+?> -->
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -20,15 +20,18 @@
             <!--Formulário de Login-->
             <form method="post" id="form" class="login_form">
 
+                <!--Área da logo  -->
                 <img src="./src/img/DRM.png" alt="DRM Logo" class="icon_logo">
 
+                <!-- Área para entrada de email -->
                 <label for="email_login">Email:</label>
                 <input type="email" name="email_login" id="email_login" class="email" placeholder="Digite seu Email">
                 
-
+                <!-- Área para entrada de senha -->
                 <label for="password_login">Senha:</label>
                 <input type="password" name="password_login" id="password_login" class="password" placeholder="***************"> 
 
+                <!-- Área para o botão de envio do formulário -->
                 <div class ='button_area'>
                     <button type="submit" class="button_entrar" id="button_entrar" value ="entrar" name="entrar">Entrar</button>
                 </div>

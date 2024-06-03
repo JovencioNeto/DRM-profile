@@ -22,11 +22,11 @@
     flex-direction: $column;
     background-color: $white;
     width: 60vw;
-    height: 76vh;
+    height: 80vh;
     border-radius: 4vb;
 }
 
-.login_form{
+form{
     display: $flex;
     justify-content: space-between;
     align-items: left;
@@ -51,8 +51,8 @@
 .icon_logo{
     position: $relative;
     bottom: 40px;
-    width: 20rem;
-    height: 16rem;
+    width: 15rem;
+    height: 15rem;
     border-radius: 30px;
 }
 

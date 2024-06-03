@@ -9,15 +9,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" type="image/x-icon" href="./src/img/DRM.png">
 </head>
-<body>  
+
+<!-- Corpo como tema dark para a troca de tema a partir de um botão -->
+<body data-theme="dark">  
     <!--Cabeçalho do site contendo um header para melhorar a semântica-->
     <header>
         <!-- Cabeçalho do site indicando o conteúdo que ele vai possuir -->
         <div class="cabeçalho">
             <!-- Área da logo do site -->
             <div class="logo_area">
-                <img src="./src/img/DRM.png" alt="logo" class="logo">
+                <img src="./src/img/DRM.png" alt="logo" class="logo" id="logo">
             </div>
+
+            <!-- Área temporaria do botão de troca de temas -->
+            <div class="area_themeSwitcher"> <button id="themeSwitcher" class="themeSwitcher">Tema claro / escuro</button></div>
+
             <!-- Área dos links para navegação -->
             <div class="links">
                 <a class="inicio" href="index.html">Início</a>
@@ -28,11 +34,15 @@
                 <a class="conta" href="./src/pages/criar_conta.html">Criar / Registrar</a>
             </div>
 
+            <!-- Área para futura pesquisas de posts feitos -->
             <div class="serch_area">
                 <input type="text" name="search" id="search" class="search" placeholder="Pesquise algo">
-                <button type="submit" class="submit" id="button_search"><i class="fa fa-search" ></i></button>
+                <button type="submit" class="submit" id="button_search"><i class="fa fa-search" >
+                    
+                </i></button>
             </div>
-
+ 
+            <!-- Área para o ícone de perfil -->
             <div class="perfil">
                 <a href="#"><img src="./src/img/icon.svg" alt="perfil icon" class="perfil_icon"></a>
             </div>

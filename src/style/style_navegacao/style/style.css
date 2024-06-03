@@ -1,4 +1,13 @@
 @charset "UTF-8";
+
+:root{
+  --white: #fff ;
+  --black: #000 ;
+  --purple: #800080 ;
+  --bg-color-1: #370250 ;
+  --bg-color-2: #771CA3 ;
+  --bg-color-3: #860068 ;
+}
 * {
   padding: 0;
   margin: 0;
@@ -7,27 +16,47 @@
 }
 
 body {
-  background: linear-gradient(150deg, #370250 16.73%, #771CA3 50.04%, #860068 83.35%);
+  background: linear-gradient(150deg, var(--bg-color-1) 16.73%, var(--bg-color-2) 50.04%, var(--bg-color-3) 83.35%);
   width: 100vw;
   height: 100vh;
 }
 
 header {
-  width: 100vw;
+  width: auto;
   height: 14vh;
-  max-width: max-content;
 }
 
 .cabeçalho {
   display: flex;
   width: 100vw;
   height: 14vh;
-  background-color: #000;
+  background-color: var(--black);
+}
+.cabeçalho .area_themeSwitcher {
+  position: relative;
+  top: 2.5rem;
+  left: 2.5rem;
+}
+.cabeçalho .themeSwitcher {
+  background-color: var(--black);
+  border: double var(--white);
+  border-radius: 1vb;
+  font-weight: bold;
+  border: 0.125rem solid var(--white);
+  color: var(--white);
+  width: 10rem;
+  height: 2rem;
+  transition: 0.15s;
+}
+.cabeçalho .themeSwitcher:hover {
+  background-color: var(--white);
+  color: var(--black);
+  transform: scale(1.1);
 }
 .cabeçalho .perfil {
   position: relative;
-  top: 2rem;
-  left: 49rem;
+  top: 1.5rem;
+  left: 15rem;
 }
 .cabeçalho .perfil .perfil_icon:hover {
   filter: brightness(0.8);
@@ -37,59 +66,44 @@ header {
   align-items: center;
   justify-content: center;
   position: relative;
-  left: 20rem;
+  left: 4rem;
 }
 .cabeçalho .links a {
   transition: 0.15s;
   text-decoration: none;
-  color: #fff;
-  font-size: 25px;
+  color: var(--white);
+  font-size: 22px;
+  margin-left: 35px;
 }
 .cabeçalho .links a:hover {
   padding: 0.5rem;
-  border: 3px solid #fff;
+  border: 3px solid var(--white);
   border-style: double;
   border-radius: 10px;
-}
-.cabeçalho .inicio, .cabeçalho .materias {
-  position: relative;
-  right: 40px;
-}
-.cabeçalho .materias {
-  position: relative;
-  left: 40px;
-}
-.cabeçalho .olimpiadas {
-  position: relative;
-  left: 80px;
-}
-.cabeçalho .enem {
-  position: relative;
-  left: 110px;
-}
-.cabeçalho .conta {
-  position: relative;
-  left: 140px;
 }
 .cabeçalho .logo_area {
   margin-left: 20px;
   display: flex;
 }
 .cabeçalho .logo_area .logo {
-  background-color: #fff;
+  background-color: var(--white);
   margin-bottom: 10px;
   margin-top: 10px;
 }
 .cabeçalho .serch_area {
   position: relative;
-  top: 3rem;
-  left: 40rem;
+  top: 2.5rem;
+  left: 10rem;
 }
 .cabeçalho .serch_area .search {
   height: 35px;
   width: 240px;
+  color: var(--black);
+  font-weight: bold;
   border: 2px solid transparent;
   border-radius: 5px;
+  background-color: var(--white);
+  z-index: 0;
 }
 .cabeçalho .serch_area .search:hover {
   filter: brightness(0.8);
@@ -111,40 +125,84 @@ header {
 .cabeçalho .serch_area .submit:hover {
   filter: brightness(0.8);
 }
+.cabeçalho .serch_area .submit i{
+  color: var(--black);
+}
 .cabeçalho .serch_area .submit i:hover {
   filter: brightness(0.8);
 }
-
-.caixa {
-  width: 100vw;
-  height: 100px;
-  border: 2px solid red;
-  margin-top: 300px;
-  display: flex;
+::-webkit-input-placeholder {
+  color: var(--black);
 }
+@media (max-height: 600px) {
+  body{
+    width: 400px;
+    height: 600px;
+    background: linear-gradient(150deg, var(--bg-color-1) 16.73%, var(--bg-color-2) 50.04%, var(--bg-color-3) 83.35%);
+  }
 
-.caixa1 {
-  border: 2px solid white;
-  flex: 0.5;
-  background-color: white;
-}
+  header {
+    height: 100px;
+    width: 600px;
+  }
+  header .cabeçalho {
+    height: 100px;
+    width: 600px;
+  }
+  .cabeçalho .logo_area {
+    margin-left: 0;
+    display: flex;
+  }
+  header .logo{
+    position:relative;
+    top: 12px;
+    width: 50px;
+    height: 50px;
+    margin-right: 5px;
+  }
+  header .themeSwitcher{
+    width: 50px;
+    height: 30px;
+  }
+  header .links{
+    position: relative;
+    top: 20px;
+    right: 100px;
+    width: 160px;
+    height: 50px;
+  }
+  .cabeçalho .links a {
+    position: relative;
 
-.caixa2 {
-  border: 2px solid blue;
-  flex: 5;
-  background-color: blue;
-}
+    font-size: 11px;
+    margin-left: 10px;
+  }
+  .cabeçalho .serch_area {
+    display: none;
+  }
+  .cabeçalho .perfil {
+      position: relative;
+      top:30px;
+      left: 150px;
 
-.caixa3 {
-  border: 2px solid orange;
-  flex: 2;
-  background-color: orange;
-}
-
-.caixa4 {
-  border: 2px solid greenyellow;
-  flex: 0.5;
-  background-color: greenyellow;
+  }
+  .cabeçalho .perfil .perfil_icon{
+    width: 30px;
+    height: 30px;
+  }
+  .cabeçalho .themeSwitcher {
+    display: none;
+  }
+  .cabeçalho .serch_area .search {
+    height: 35px;
+    width: 140px;
+    color: var(--black);
+    font-weight: bold;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    background-color: var(--white);
+    z-index: 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
