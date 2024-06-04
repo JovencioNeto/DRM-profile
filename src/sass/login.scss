@@ -22,11 +22,11 @@
     flex-direction: $column;
     background-color: $white;
     width: 60vw;
-    height: 80vh;
+    height: 76vh;
     border-radius: 4vb;
 }
 
-form{
+.login_form{
     display: $flex;
     justify-content: space-between;
     align-items: left;
@@ -51,8 +51,8 @@ form{
 .icon_logo{
     position: $relative;
     bottom: 40px;
-    width: 15rem;
-    height: 15rem;
+    width: 20rem;
+    height: 16rem;
     border-radius: 30px;
 }
 
@@ -84,3 +84,22 @@ form{
     display: $none;
 }
 
+@media (max-width: 400px){
+    .box_form{
+        width: 100%;
+        height: 100%;
+
+            img{
+                height: 100px;
+                width: 100px;
+            }
+    }
+}
+
+@media (max-height: 600px){
+    .box_form{
+        width: 100%;
+        height: 100%;
+    }
+
+}

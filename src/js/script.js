@@ -6,6 +6,9 @@ const logo = document.getElementById('logo')
 const body = document.querySelector('body')
 const root = document.querySelector(':root')
 
+let count = 1
+document.getElementById('radio1').checked = true;
+
 button_search.addEventListener('click', () =>{
     // Evento de click para esvaziar o input ao clicar na lupa
     input_search.value = ""
@@ -32,3 +35,20 @@ document.getElementById('themeSwitcher').addEventListener('click', () =>{
         body.dataset.theme = 'dark'
     }
 })
+
+//Função para passagem de imagem a cada 2 segundos
+setInterval( function(){
+    nextImage()
+}, 2000)
+
+//Função para controlar a passagem de imagens a partir da variável count
+function nextImage(){
+    count++
+    //Condição para retornar a imagem inicial quando todas já passarem
+    if(count>4){
+        count = 1
+    }
+
+    //Checagem da próximo radio toda vez que a função é ativada
+    document.getElementById("radio" + count).checked = true
+}
