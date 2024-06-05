@@ -9,11 +9,18 @@ const root = document.querySelector(':root')
 let count = 1
 document.getElementById('radio1').checked = true;
 
+//Evento para que o botão Enter fucione no Input
+input_search.addEventListener('keypress', function(event) {
+    //Se o valor da chave enter for acionado seu valor irá zerar
+    if (event.key === 'Enter') {
+        input_search.value = ''
+    }
+})
+//Evento para a queima de valores dentro do input
 button_search.addEventListener('click', () =>{
     // Evento de click para esvaziar o input ao clicar na lupa
     input_search.value = ""
 })
-
 document.getElementById('themeSwitcher').addEventListener('click', () =>{
     // Se o tema estiver como dark, troca para as cores do tema claro
     if(body.dataset.theme === 'dark'){

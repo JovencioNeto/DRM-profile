@@ -14,6 +14,11 @@ button_search.addEventListener('click', () =>{
     // Evento de click para esvaziar o input ao clicar na lupa
     input_search.value = ""
 })
+input_search.addEventListener('keypress', function(event) {
+    if (event.key === 'Enter') {
+        input_search.value = ''
+    }
+})
 
 //Evento para mudança de tema
 document.getElementById('themeSwitcher').addEventListener('click', () =>{
