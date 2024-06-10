@@ -226,7 +226,7 @@ body #radio4:checked ~ .navigation_auto .auto_btn4 {
   }
   .cabeçalho .perfil {
     position: relative;
-    top: 75px;
+    top: 78px;
   }
   .cabeçalho .perfil .links {
     left: 0;
@@ -244,10 +244,6 @@ body #radio4:checked ~ .navigation_auto .auto_btn4 {
   }
   body .slide img {
     height: 200px;
-  }
-  body .slide .manual_navigation {
-    bottom: 200px;
-    right: 2000px;
   }
 }
 @media (max-width: 400px) {
@@ -292,9 +288,49 @@ body #radio4:checked ~ .navigation_auto .auto_btn4 {
   body .slide img {
     width: 300px;
   }
-  body .slide .manual_navigation {
+}
+@media (max-width: 600px) {
+  .logo, .themeSwitcher, .serch_area {
+    display: none;
+    width: 0;
+    height: 0;
+  }
+  header {
+    width: 600px;
+  }
+  .cabeçalho {
+    width: 600px;
+  }
+  .cabeçalho .logo_area {
+    margin-left: 0;
+  }
+  .cabeçalho .perfil {
+    position: relative;
+    left: 100px;
+    margin-left: 20px;
+  }
+  .cabeçalho .perfil .perfil_icon {
+    width: 40px;
+  }
+  .cabeçalho .links {
+    left: 80px;
+  }
+  .cabeçalho .links a {
+    font-size: 14px;
+    margin-left: 10px;
+  }
+  .slider {
+    width: 200px;
+    position: relative;
+    left: 150px;
     bottom: 200px;
-    right: 2000px;
+  }
+  body .slide {
+    width: 25%;
+    position: relative;
+  }
+  body .slide img {
+    width: 300px;
   }
 }
 
